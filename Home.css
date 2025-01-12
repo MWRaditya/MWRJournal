@@ -1,0 +1,41 @@
+body {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    transition: background-color 0.5s, color 0.5s;
+
+  }
+
+  #heroCarousel {
+    width: 80%; /* Adjust as needed */
+    max-width: 800px; /* Set a max-width to limit the size */
+    margin: 0 auto; /* Center the carousel */
+  }
+
+  .hero {
+    margin-top: 80px; /* Adjust this value as needed */
+}
+  
+  #heroCarousel .carousel-inner img {
+    height: 400px; /* Adjust height as needed */
+    object-fit: cover; /* Ensures images are well-aligned and cropped if necessary */
+  }
+
+  .custom-card {
+    color: #333; /* Keep the text color */
+    border: 1px solid #ccc; /* Optional: Border color */
+}
+  
+  .custom-card .card-title {
+    --text-color: #000000;
+    color: var(--text-color); /* Custom title color */
+  }
+  .custom-card img {
+    border-bottom: 1px solid #ccc; /* Optional: Separator between image and content */
+  }
+  
+  .custom-card .card-text {
+    color: #3284d5; /* Custom color for the card text */
+  }
+  

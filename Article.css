@@ -1,0 +1,96 @@
+.container {
+    width: 100%;
+    text-align: justify;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+body {
+    background-color: var(--background-color, #ffffff); /* Default to white */
+    color: var(--text-color, #000000); /* Default to black */
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.article {
+    padding: 20px;
+    border: 2px solid var(--border-color, #ccc); /* Add custom property for border color */
+    border-radius: 10px; 
+    background-color: var(--card-background-color, #f5f5f5); /* Card background color */
+}
+
+.article ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+.article ol li {
+    margin-bottom: 20px; 
+}
+
+/* Menu styling */
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--menu-background-color, rgb(55, 117, 117));
+    border: 2px solid var(--border-color, rgb(186, 186, 185));
+    width: 80%;
+    border-radius: 39px;
+    padding: 5px;
+}
+
+.menu ul a {
+    color: var(--link-color, rgb(254, 249, 249));
+    text-decoration: none;
+}
+
+@media screen and (min-width: 767px) {
+    .flex-container {
+        flex-direction: row; 
+    }
+
+    .article {
+        flex: 1;
+    }
+}
+
+.card {
+    background-color: var(--card-background-color, #ffffff); /* Default to light mode */
+    border: 1px solid var(--card-border-color, #dee2e6); /* Border color */
+    color: var(--text-color, #000000); /* Text color */
+}
+
+
+table {
+    background-color: var(--table-background-color, #f8f9fa); /* Default light mode */
+    color: var(--text-color, #000000); /* Default text color */
+    border-collapse: collapse; /* Ensure borders are a single layer */
+    border: 1px solid var(--table-border-color, #dee2e6); /* Apply theme-aware border color */
+    transition: background-color 0.5s, color 0.5s;
+}
+
+th, td {
+    border: 1px solid var(--table-border-color, #dee2e6); /* Use same border color for cells */
+    padding: 8px; /* Optional: Adjust padding for consistent spacing */
+}
+
+.card {
+    background-color: var(--card-background-color, #ffffff); /* Default to light mode */
+    border: 1px solid var(--card-border-color, #dee2e6); /* Border color */
+    color: var(--text-color, #000000); /* Text color */
+}
+
+

@@ -1,0 +1,86 @@
+
+.container {
+    width: 100%;
+    text-align: justify;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+}
+
+.flex-item {
+    flex: 1;
+    padding: 20px;
+    border: 2px solid #ccc; 
+    border-radius: 10px; 
+}
+
+
+.flex-item img {
+    width: 100%;
+    height: auto;
+}
+
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(55, 117, 117);
+    border: 2px solid rgb(186, 186, 185);
+    width: 80%;
+    border-radius: 39px;
+    padding: 5px;
+}
+
+.menu ul a {
+    color: rgb(254, 249, 249);
+    text-decoration: none;
+}
+
+
+@media screen and (min-width: 767px) {
+    .flex-container {
+        flex-direction: row; 
+        gap: 20px;
+    }
+
+    .photo, .video {
+        flex: 1;
+    }
+}
+
+/* Theme-responsive styles for gallery */
+body {
+    background-color: var(--background-color, #ffffff); /* Light mode default */
+    color: var(--text-color, #000000); /* Light mode text */
+    transition: background-color 0.5s, color 0.5s;
+}
+
+table, th, td {
+    background-color: var(--gallery-table-background, #f8f9fa); /* Light mode */
+    color: var(--text-color, #000000); /* Text color */
+    border: 1px solid var(--gallery-border-color, #dee2e6); /* Border color */
+}
+
+.flex-item {
+    background-color: var(--gallery-card-background, #ffffff); /* Default card background */
+    border: 1px solid var(--gallery-border-color, #ccc);
+}
+
+.flex-item img {
+    filter: var(--gallery-image-filter, none); /* Image styling based on theme */
+}
+
